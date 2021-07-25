@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, loading } from 'react';
+import React, { useEffect, useRef } from 'react';
 import styled from 'styled-components';
 import StarBorderOutlinedIcon from '@material-ui/icons/StarBorderOutlined';
 import InfoOutlinedIcon from '@material-ui/icons/InfoOutlined';
@@ -28,7 +28,7 @@ function Chat() {
         chatRef?.current?.scrollIntoView({
             behavior: "smooth",
         });
-    }, [roomId, loading]);
+    }, [roomId]);
 
 
     return (
